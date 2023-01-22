@@ -44,6 +44,8 @@ body {
 .perfumeText {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
 }
 
 .perfumeName {
