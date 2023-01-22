@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+}
+
+.perfumeImage {
+  width: 320px;
+  height: 480px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.mobileImage {
+  display: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfumeDisplay {
+  width: 320px;
+  height: 480px;
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.perfumeText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
+.perfumeName {
+  font-size: 2.4rem;
+  font-family: "Fraunces", serif;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}
+
+.descriptionText {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: hsl(228, 12%, 48%);
+}
+
+.priceText {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.newPrice {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.oldPrice {
+  font-size: 0.8rem;
+  padding-left: 1rem;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+.cart {
+  border-color: transparent;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.cart:hover {
+  cursor: pointer;
+  background-color: hsl(212, 21%, 14%);
+}
+
+.attribution {
+  padding: 2rem;
+  left: 0;
+  height: 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+}
+
+@media (min-width: 310px) and (max-width: 645px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .perfumeImage {
+    display: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .mobileImage {
+    display: flex;
+    min-width: 250px;
+    max-height: 230px;
+  }
+
+  .perfumeDisplay {
+    min-width: 250px;
+    max-height: 380px;
+    padding: 1.5rem;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .perfumeName {
+    font-size: 1.7rem;
+    font-family: "Fraunces", serif;
+    font-weight: bolder;
+    padding-bottom: 0.2rem;
+  }
+
+  footer {
+    padding-top: 2rem;
+    text-align: center;
+  }
+}
